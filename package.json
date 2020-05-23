@@ -1,0 +1,19 @@
+{
+  "name": "typescript-template",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/hi-imcodeman/typescript-template.git",
+  "author": "Asraf Ali <asraf.cse@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  }
+}
