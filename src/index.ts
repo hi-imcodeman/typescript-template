@@ -1,3 +1,11 @@
-let a: number = 10
-let b: number = 20
-console.log(a + b);
+import { EventEmitter } from 'events'
+export default class Calculation extends EventEmitter {
+    add(a: number, b: number): number {
+        this.emit('done', 'addition')
+        return a + b
+    }
+    subtrct(a: number, b: number): number {
+        this.emit('done', 'subtraction')
+        return a - b
+    }
+}
