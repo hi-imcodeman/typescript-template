@@ -1,5 +1,8 @@
-name: CI on Push
-on: [push]
+name: CI
+on:
+  push:
+  schedule:
+    - cron: '0 0 * * *'
 jobs:
   build:
     name: Test & Build & Compile
