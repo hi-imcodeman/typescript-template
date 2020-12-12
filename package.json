@@ -11,7 +11,8 @@
     "docs": "typedoc",
     "test": "jest",
     "coverage": "jest --coverage",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "gpr-setup": "node ./scripts/setup-gpr.js"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx,js,jsx}": [
