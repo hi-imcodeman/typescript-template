@@ -15,9 +15,13 @@ jobs:
           node-version: "12.x"
       - name: Install dependencies
         run: yarn
+      - name: Lint Package
+        run: yarn lint
       - name: Test Package
         run: yarn test
       - name: Build Package
         run: yarn build
       - name: Webpack Compile
         run: yarn compile
+      - name: TypeDoc Generation
+        run: yarn docs
